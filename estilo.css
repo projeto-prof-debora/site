@@ -1,0 +1,136 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background: #ffffff;
+}
+
+#container {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#container > header {
+    background: #ffffff;
+    justify-content: center;
+    padding: 2rem;
+}
+
+main {
+    background: #ffffff;
+    font-size: 20px;
+    padding: 1rem;
+}
+
+footer {
+    background: #ff4c00;
+    color: #ffffff;
+    padding: 12px;
+    font-size: 10px;
+    height: 4rem;
+}
+
+/* NAV */
+nav {
+    background: #ff4c00;
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
+    
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    color: #ffffff;
+    border-right: 0.5px solid #ffffff;
+    display:inline-block
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: inline-block;
+    color: #ffffff;
+    padding: 10px 25px;
+}
+
+/* MAIN */
+main > header {
+    color: #ff4c00;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
+    font-weight: 800;
+}   
+
+.produto { margin-bottom: 20px;margin-top: 10px; cursor: pointer; }
+.produto img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 280px;
+    padding-right: 20px;
+    justify-content: center;
+}
+.produto p {
+   /* background-color: #ff4c00;*/
+    color: rgb(44, 40, 40);
+    height:50px;
+    width: 260px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    display:inline-table
+    text-align: center;
+    
+    
+}
+
+.preco p {
+     color: rgb(44, 40, 40);
+     height:20px;
+     width: 260px;
+     padding-bottom: 35px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-size: 18px;
+     display:inline-table
+     text-align: center;
+     
+     
+ }
+.botao p {
+    background-color: #ff4c00;
+    color: whitesmoke;
+    height:50px;
+    width: 260px;
+    padding: 12px 6px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    display:flex
+    justify-content: center;
+    text-align: center;
+    
+    
+}
+
+.botao p:hover {
+    background-color: #2b2c2e;
+    color: whitesmoke;
+}
+
+li:hover {
+    background-color: #2b2c2e;
+    color: whitesmoke;
+}
+
+#produtos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content:center
