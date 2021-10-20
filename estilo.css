@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
 * {
+ 
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 html {
@@ -13,6 +17,7 @@ body {
 }
 
 #container {
+
     max-width: 100%;
     margin: 0 auto;
     text-align: center;
@@ -40,10 +45,8 @@ footer {
 
 /* NAV */
 nav {
-    background: #ff4c00;
-    font-size: 17px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
-    
+    background: #ff4d00;
+    font-size: 12px;  
 }
 
 nav ul {
@@ -51,6 +54,7 @@ nav ul {
 }
 
 nav ul li {
+
     color: #ffffff;
     border-right: 0.5px solid #ffffff;
     display:inline-block
@@ -60,6 +64,7 @@ nav ul li a {
     text-decoration: none;
     display: inline-block;
     color: #ffffff;
+    font-size: 15px;
     padding: 10px 25px;
 }
 
@@ -70,11 +75,11 @@ main > header {
     font-weight: 800;
 }   
 
-.produto { margin-bottom: 20px;margin-top: 10px; cursor: pointer; }
+.produto { margin-bottom: 20px;margin-top: 10px; }
 .produto img {
     display: flex;
     flex-wrap: wrap;
-    width: 280px;
+    width: 200px;
     padding-right: 20px;
     justify-content: center;
 }
@@ -82,9 +87,9 @@ main > header {
    /* background-color: #ff4c00;*/
     color: rgb(44, 40, 40);
     height:50px;
-    width: 260px;
+    width: 170px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
+    font-size: 12px;
     display:inline-table
     text-align: center;
     
@@ -94,10 +99,10 @@ main > header {
 .preco p {
      color: rgb(44, 40, 40);
      height:20px;
-     width: 260px;
+     width: 180px;
      padding-bottom: 35px;
      font-family: Verdana, Geneva, Tahoma, sans-serif;
-     font-size: 18px;
+     font-size: 16px;
      display:inline-table
      text-align: center;
      
@@ -106,14 +111,15 @@ main > header {
 .botao p {
     background-color: #ff4c00;
     color: whitesmoke;
-    height:50px;
-    width: 260px;
-    padding: 12px 6px;
+    height:40px;
+    width: 180px;
+    padding: 8px 6px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     display:flex
     justify-content: center;
     text-align: center;
+    
     
     
 }
@@ -134,3 +140,4 @@ li:hover {
     flex-wrap: wrap;
     text-align: center;
     justify-content:center
+}
