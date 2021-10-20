@@ -38,7 +38,8 @@ main {
 footer {
     background: #ff4c00;
     color: #ffffff;
-    padding: 12px;
+    padding-top: 50px;
+    padding: 40px;
     font-size: 10px;
     height: 4rem;
 }
@@ -46,7 +47,7 @@ footer {
 /* NAV */
 nav {
     background: #ff4d00;
-    font-size: 12px;  
+    font-size: 4px;  
 }
 
 nav ul {
@@ -54,10 +55,9 @@ nav ul {
 }
 
 nav ul li {
-
-    color: #ffffff;
-    border-right: 0.5px solid #ffffff;
-    display:inline-block
+    /*color: #ffffff;
+    border-right: 0.3px solid #ffffff;*/
+    display: inline-block;
 }
 
 nav ul li a {
@@ -65,7 +65,7 @@ nav ul li a {
     display: inline-block;
     color: #ffffff;
     font-size: 15px;
-    padding: 10px 25px;
+    padding: 6px 20px;
 }
 
 /* MAIN */
@@ -79,16 +79,15 @@ main > header {
 .produto img {
     display: flex;
     flex-wrap: wrap;
-    width: 200px;
+    width: 175px;
     padding-right: 20px;
     justify-content: center;
 }
 .produto p {
-   /* background-color: #ff4c00;*/
+   background-color: #ffffff;
     color: rgb(44, 40, 40);
     height:50px;
-    width: 170px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 155px;
     font-size: 12px;
     display:inline-table
     text-align: center;
@@ -99,10 +98,9 @@ main > header {
 .preco p {
      color: rgb(44, 40, 40);
      height:20px;
-     width: 180px;
-     padding-bottom: 35px;
-     font-family: Verdana, Geneva, Tahoma, sans-serif;
-     font-size: 16px;
+     width: 155px;
+     padding-bottom: 30px;
+     font-size: 14px;
      display:inline-table
      text-align: center;
      
@@ -110,12 +108,12 @@ main > header {
  }
 .botao p {
     background-color: #ff4c00;
+    font-weight: 600;
     color: whitesmoke;
-    height:40px;
-    width: 180px;
-    padding: 8px 6px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
+    height: 34px;px;
+    width: 155px;
+    padding: 6px 4px;
+    font-size: 13px;
     display:flex
     justify-content: center;
     text-align: center;
