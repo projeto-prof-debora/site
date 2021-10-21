@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <title>formulario</title>
+    <style type="text/css">
+        body {
+            background-color: #eeeeee
+                /*cor do fundo*/
+        }
+
+
+        label {
+            color: #606060;
+            /*cor do texto*/
+            font-weight: bold;
+        }
+
+        .bt {
+            background-color: #ff0000;
+            /*cor de fundo botao*/
+            color: aqua;
+            /*cor da letra*/
+            width: 75px;
+            /*largura*/
+            height: 25px;
+            /*altura*/
+            border: 0px;
+            /*para retirar bordas*/
+            cursor: pointer;
+            /*comando pra quando passar em cima dos botoes aparecer a maozinha*/
+        }
+
+        input:hover {
+            border: 2px solid #0000ff;
+            /*comando pra deixar a borda azul quando passamos o mouse em cima*/
+        }
+
+        input:focus {
+            background-color: #fffc66;
+            /*quando selecionar uma cx ela muda de cor*/
+        }
+    </style>
+</head>
+
+<body>
+    <form name="f_aula" method="post" action="recebe.html">
+        <!--method pode ser get que faz envio explicito dos dados pela barra de endereço ou post que é o mais discreto, o action informa quem vai receber o formulario-->
+        <label>email:</label><br />
+        <input type="text" name="f_email" size="40" maxlength="30" /><br /><br />
+
+        <label>nome:</label><br />
+        <input type="text" name="f_nome" size="40" maxlength="30" /><br /><br />
+        <!--funcao nome com tamnho 40 caracteres, maxlength limita em 30 a qtdade de caracteres q pode usar-->
+        <label>senha:</label><br />
+        <input type="password" name="f_senha" size="40" maxlength="20" /><br /><br />
+        <label>confirme sua senha:</label><br />
+        <input type="password" name="f_senha" size="40" maxlength="20" /><br /><br />
+        <label>CPF:</label><br />
+        <input type="text" class="form-control cpf-mask" placeholder="Ex.: 000.000.000-00"><br /><br />
+        <!-- <input type="number" name="f_CPF" size="15" maxlength="12" /><br /><br />-->
+        <label>CEP:</label><br />
+        <input type="text" class="form-control cep-mask" placeholder="Ex.: 00000-000"><br /><br />
+        <!--  <input type="number" name="f_CEP" size="12" maxlength="9" /><br /><br />-->
+        <input type="submit" class="bt" value="cadastrar">
+        <!--botao cadastrar, criamos o class="bt para formatação somente dos botoes"-->
+        <input type="reset" class="bt" value="limpar campos">
+        <!--botao limpar dados-->
+        <input type="button" class="bt" value="sem valor">
+
+
+    </form>
+</body>
+
+</html>
