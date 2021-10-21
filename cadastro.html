@@ -43,7 +43,7 @@
 </head>
 
 <body>
-    <form name="f_aula" method="post" action="recebe.html">
+    <form name="f_aula" method="post" action="cadastro.php">
         <!--method pode ser get que faz envio explicito dos dados pela barra de endereço ou post que é o mais discreto, o action informa quem vai receber o formulario-->
         <label>email:</label><br />
         <input type="text" name="f_email" size="40" maxlength="30" /><br /><br />
@@ -54,12 +54,12 @@
         <label>senha:</label><br />
         <input type="password" name="f_senha" size="40" maxlength="20" /><br /><br />
         <label>confirme sua senha:</label><br />
-        <input type="password" name="f_senha" size="40" maxlength="20" /><br /><br />
+        <input type="password" name="f_senha1" size="40" maxlength="20" /><br /><br />
         <label>CPF:</label><br />
-        <input type="text" class="form-control cpf-mask" placeholder="Ex.: 000.000.000-00"><br /><br />
+        <input type="text" name="f_cpf" class="form-control cpf-mask" placeholder="Ex.: 000.000.000-00"><br /><br />
         <!-- <input type="number" name="f_CPF" size="15" maxlength="12" /><br /><br />-->
         <label>CEP:</label><br />
-        <input type="text" class="form-control cep-mask" placeholder="Ex.: 00000-000"><br /><br />
+        <input type="text" name="f_cep" class="form-control cep-mask" placeholder="Ex.: 00000-000"><br /><br />
         <!--  <input type="number" name="f_CEP" size="12" maxlength="9" /><br /><br />-->
         <input type="submit" class="bt" value="cadastrar">
         <!--botao cadastrar, criamos o class="bt para formatação somente dos botoes"-->
