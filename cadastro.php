@@ -1,7 +1,9 @@
 <?php
-    $vnome=$_post["f_nome"];
-    $vsenha=$_post["f_senha"];
-    $vcpf=$_post["f_cpf"];
-    $vcep=$_post["f_cep"];
-    echo "nome: ".vnome."<br/>senha: ".$vsenha."<br/>" <br/>cpf: ".$vcep."<br/>" <br/>cpf: ".$vcep."<br/>";
-  ?>
+$vemail=$_POST["f_email"];
+    $vnome=$_POST["f_nome"];
+    $vsenha=$_POST["f_senha"];
+    $vcpf=$_POST["f_cpf"];
+    $vcep=$_POST["f_cep"];
+    echo "email: ".$vemail."<br/>nome: ".$vnome."<br/>senha: ".$vsenha."<br/cpf: >".$vcpf."<br/>cep: ".$vcep."<br/>";
+
+ ?>
