@@ -1,0 +1,105 @@
+<html>
+
+<head>
+    <title>loja virtual</title>
+    <meta charset="utf-8" />
+    <style>
+        #produtos {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2%;
+            display: flex;
+        }
+
+        #carrinho {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2%;
+            display: block;
+        }
+
+        .produto-single {
+            width: 33.33%;
+            padding: 0 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="produtos">
+
+    </div>
+    <h2>vitrine</h2>
+    <!--produtos-->
+    <h2>carrinho</h2>
+    <div id="carrinho">
+
+
+    </div>
+    <!--carrinho-->
+
+    <script>
+        const items = [
+            {
+                id: 0,
+                nome: 'placa de video',
+                img: 'img.jpg',
+                quantidade: 0,
+            },
+            {
+                id: 1,
+                nome: 'placa mae',
+                img: 'img.jpg',
+                quantidade: 0,
+            },
+            {
+                id: 2,
+                nome: 'monitor',
+                img: 'img.jpg',
+                quantidade: 0,
+            },
+        ]
+        inicializarLoja = () => {
+            var containerProdutos = document.getElementById('produtos');/*funcao pra colocar dinamicamento nossos itens na vitrine*/
+            items.map((val) => {/*para percorrer todos os itens e colocar dentro do container*/
+                containerProdutos.innerHTML += `
+
+                    <div class="produto-single" >
+                        <img src="`+ val.img + `" />
+                        <p>`+ val.nome + `</p>
+                        <a key="`+ val.id + `" href="#" > adicionarCarrinho! < a />
+                    </div >
+                    `;/*aqui criamos uma div (div class)que representa cada produto*/
+            })
+        }
+        inicializarLoja();
+
+        atualizarCarrinho = () => {
+            var containerCarrinho = document.getElementById('carrinho');/*funcao pra colocar dinamicamento nossos itens na vitrine*/
+            containerCarrinho.innerHTML = ""/*aqui colocamos o inner html em vazio para limpar o carrinho e não ficar repetindo os itens adicionados*/
+            items.map((val) => {/*para percorrer todos os itens e colocar dentro do container*/
+                if (val.quantidade > 0) {/*aqui é pra validar a qtdade*/
+                    containerCarrinho.innerHTML += `
+
+                 <p>`+ val.nome + ` | quantidade: ` + val.quantidade + `<p/>
+                    <hr>
+                    `;/*aqui adiciomnamos o produto ao carrinho*/
+                }
+            })
+
+        }
+        var links = document.getElementsByTagName('a');/*podemos chamar por classes quando o volume for grande de produttos*/
+        for (var i = 0; i < links.length; i++) {
+            links[i].addEventListener("click", function () {
+                let key = this.getAttribute('key');
+                items[key].quantidade++;
+                atualizarCarrinho();
+                return false;
+            })
+        }
+
+    </script>
+</body>
+<!--fonte do script https://www.youtube.com/watch?v=wG65FdU-Yos-->
+
+</html>
